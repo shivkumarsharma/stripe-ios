@@ -382,7 +382,7 @@ class ConfirmButton: UIView {
                         if paymentMethodType == .stripe(.linkInstantDebit) {
                             return STPLocalizedString("Add bank account", "Button prompt to add a bank account as a payment method.")
                         } else {
-                            return String.Localized.continue
+                            return "Submit"
                         }
                     case let .pay(amount, currency):
                         let localizedAmount = String.localizedAmountDisplayString(
